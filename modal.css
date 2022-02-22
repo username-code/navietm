@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color:#0071CA;
+    border-radius: 10px 10px 0px 0px;;
+}
+
+.modal-header > h5 {
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+}
+
+.modal-body span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal-footer button {
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+
+/* Custom Checkbox */
+input[type='checkbox'] {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 13px !important;
+    height: 13px !important;
+    appearance: none;
+    border-radius: 15%;
+    border: 1px solid #7B7B7B;
+    box-shadow: none;
+    font-weight: bolder;
+}
+
+input[type='checkbox']:checked {
+    background-color: #7C7C7C;
+    font-size: 0.5rem;
+    border: none;
+}
+
+input[type='checkbox']:checked::after {
+    content: "\2713";
+    color: white;
+}
+
+/* Input */
+div.input-div > input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.text-enable {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: #A9A9A9;
+}

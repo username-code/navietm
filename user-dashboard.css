@@ -1,0 +1,19 @@
+.dashboard{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.dashboard-text{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #search-div {
+        width: 100%;
+    }
+    #search-toggle {
+        order: -1;
+    }
+}

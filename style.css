@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+/* Main Body */
+div.inner-container {
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 44px rgba(89, 89, 89, 0.12);
+}
+
+.full-h-custom {
+    flex: 1;
+    margin: 0 auto;
+}
+
+/* Left Section */
+img.left-img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    /* max-width: 65%; */
+}
+
+/* Right Section */
+div.heading {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 3rem;
+}
+
+div.sub-heading {
+    color: #868686;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+    line-height: 1.375rem;
+}
+
+div.tabs {
+    margin-top: 2.25rem;
+    border-bottom: 2px solid #ECECEC;
+}
+
+div.tabs a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888888;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    line-height: 1.688rem;
+}
+
+a.active-link {
+    font-weight: 600 !important;
+    color: #0071CA !important;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0071CA;
+}
+
+div.error-msg {
+    color: #FF0000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    visibility: hidden;
+}
+
+/* Form */
+
+form div.mail-pass {
+    border-radius: 3rem;
+}
+
+form input[type='email'],
+form input[type='password'] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    overflow: hidden;
+    padding-right: 1rem;
+}
+
+form span.mail-icon {
+    border-right: 1px solid #dee2e6;
+    padding: 18px 14px 18px 22px;
+}
+
+
+form span.pass-icon {
+    border-right: 1px solid #dee2e6;
+    padding: 16px 16px 16px 24px;
+}
+
+input[type='checkbox'] {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 16px !important;
+    height: 16px !important;
+    appearance: none;
+    border-radius: 15%;
+    border: 1px solid #7B7B7B;
+    box-shadow: none;
+    text-shadow: 1px 0 white;
+    font-weight: bold;
+}
+
+input[type='checkbox']:checked {
+    background-color: #7C7C7C;
+    font-size: 0.7rem;
+    border: none;
+}
+
+input[type='checkbox']:checked::after {
+    content: "\2713";
+    color: white;
+}
+
+span.reme {
+    font-family: 'Poppins', sans-serif;
+    color: #7B7B7B;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+}
+
+a#forgot-password {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    color: #7B7B7B;;
+}
+
+input[type='button'],
+input[type='submit'] {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.935rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05em;
+    background-color: #0071CA;
+    border-radius: 3rem;
+    color: white;
+    padding: 0.75rem 2.25rem;
+}
+
+/* Site Footer */
+footer {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: 'Manrope', sans-serif;
+    background-color: #1E293B;
+}
+
+div.border-right {
+    border-right: 1px solid white;
+}
+
+/* Media Quries */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    div.tabs {
+        margin-top: 0.5rem !important;
+    }
+}
+
+@media (min-width: 1199px) {
+    .mt-6 {
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.left-section {
+        content: "";
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    footer {
+        margin-top: 1.5rem;
+        max-width: 1320px;
+    }    
+}

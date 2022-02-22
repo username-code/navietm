@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <link rel="stylesheet" href="page-1.css">
+    <link rel="stylesheet" href="details.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo-main.svg" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Details</title>
+</head>
+<body class="row justify-content-center">
+    <!-- Sidebar -->
+    <section class="col-12 col-md-4 col-lg-2 sidebar-bg d-flex flex-column collapse d-none" id="sidebar">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <div class="ms-auto" style="cursor: pointer;" onclick="hide();">
+                    <img src="img/toggler.svg" alt="Toggle">
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container p-0">
+                <a href="#" style="text-decoration: none;">
+                    <div class="dashboard current-active heading">Dashboard</div>
+                </a>
+                <div class="dropdown-sidebar1 p-3">
+                    <a href="#home" class="text-white d-flex justify-content-between" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="home">
+                        <span>Home</span>
+                        <img src="img/sidebar-dd1.svg" alt="Icon" onclick="downarrow();" id="down-arrow">
+                        <img src="img/sidebar-dd.svg" alt="Icon" onclick="uparrow();" id="up-arrow" class="d-none">
+                    </a>
+                    <div class="collapse dd-content" id="home">
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Switch IETP</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Search</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">View Notes</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">IETP Details</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Aplicability Filters</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Fault Code Search</a>
+                        </div>
+                    </div>
+                </div><!-- dropdown-sidebar -->
+                <div class="heading heading-2 p-3">IETP Viewer</div>
+                <div class="dropdown-sidebar2 p-3">
+                    <a href="#anchor" class="text-white d-flex justify-content-between" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="anchor">
+                        <span>Anchor Capstan</span>
+                        <img src="img/sidebar-dd1.svg" alt="Icon" onclick="downarrow1();" id="down-arrow1">
+                        <img src="img/sidebar-dd.svg" alt="Icon" onclick="uparrow1();" id="up-arrow1" class="d-none">
+                    </a>
+                    <div class="collapse dd-content" id="anchor">
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Duties Of Single Head Anchor Capston</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Technical Information</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Operating Instructions</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Maintenance Instructions</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Catalogue of Spares, Tools, Test Equipment And Accessories</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Trial Document</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Other Documents</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Video</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">3D Visualizations</a>
+                        </div>
+                        <div>
+                            <a href="#" class="dropdown-item sub-heading">Help Guide</a>
+                        </div>
+                    </div>
+                </div><!-- dropdown-sidebar -->
+            </div>
+        </main>
+        <footer class="sidebar-footer mt-auto">
+            <div class="container p-3">
+                <div class="py-2">Privacy Policy</div>
+                <div class="py-2">Terms & Conditions</div>
+                <div class="py-3">&copy; Copyright NavIETMViewer 2022</div>
+            </div>
+        </footer>
+    </section><!-- Sidebar -->
+    <!-- Main Content -->
+    <section id="full-w">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light mx-auto" id="nav">
+            <div class="container-fluid ps-md-5 d-flex justify-content-start flex-column flex-md-row flex-lg-row flex-nowrap" id="con-fluid">
+                <a href="#" class="d-flex position-absolute bg-primary-custom text-white p-3 pt-md-4" style="top: 0; left: 0;" onclick="show();" id="d-none">
+                    <img src="img/toggler.svg" alt="Toggle" style="width: 1.5em; height: 1.5em;">
+                </a>
+                <span class="ms-3"></span>
+                <div style="min-width: max-content;" class="d-flex align-items-center" id="search-div">
+                    <ul class="navbar-nav d-flex flex-column flex-sm-row justify-content-evenly w-100">
+                        <li><a href="#" class="nav-link active text-center">Support Items</a></li>
+                        <li><a href="#" class="nav-link active text-center">Supply Items</a></li>
+                        <li><a href="#" class="nav-link active text-center">Acronyms</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-evenly justify-content-md-between align-items-center w-100" id="search-toggle">
+                    <div class="search-div d-flex justify-content-between px-3 py-1 col-6 col-sm-5 col-md-8 col-lg-8 position-relative ms-4">
+                        <input type="text" id="search" class="w-100" placeholder="Search">
+                        <img src="img/search-icon.svg" alt="Icon" class="ms-1">
+                    </div>
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-md-center ms-auto" id="ul-collapse">
+                        <li class="nav-item mt-md-0">
+                            <a href="#" class="nav-link">
+                                <img src="img/mail-icon.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <span class="dropdown-divider"></span>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="notification" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/notification-icon.svg" alt="Icon">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end notif" aria-labelledby="#notification">
+                                <div>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            4 new notification
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <hr class="dropdown-divider">
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="d-flex align-items-center justify-content-between border-bottom pb-2">
+                                            <div>Notification message 01</div>
+                                            <div class="ms-5">5 min</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="d-flex align-items-center justify-content-between border-bottom pb-2">
+                                            <div>Notification message 02</div>
+                                            <div class="ms-5">10 min</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="d-flex align-items-center justify-content-between pb-2">
+                                            <div>Notification message 03</div>
+                                            <div class="ms-5">15 min</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="w-100 h-100 py-2 dd-last-of-type">
+                                    <a href="#" class="dropdown-item">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div>See all notifications</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <span class="dropdown-divider"></span>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" id="loginDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Hello, </span>
+                                <span class="text-dark">Admin</span>
+                                <i class="fal fa-chevron-circle-down ms-1" style="color: #0071CA;"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end profile" aria-labelledby="loginDropdown">
+                                <div>
+                                    <a href="#" class="dropdown-item">Profile</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">Default IETP</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="dropdown-item">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="container-fluid mt-2">
+                <div class="d-flex align-items-center flex-column flex-sm-row gy-3">
+                    <div class="dashboard">
+                        Dashboard
+                    </div>
+                    <div class="ms-sm-auto back-button">
+                        <a href="admin-dashboard.html">
+                            <input type="button" value="Back" id="login-btn-admin" class="addrole">
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <img src="img/dashboardimage.svg" alt="" class="img-fluid">
+                </div>
+                <div class="card my-3">
+                    <div class="card-body">
+                        <div> Noske-Kaeser designs and provides system solutions and componentsin the fields of air
+                            conditioning,
+                            ventilation,
+                            refrigeration, piping andfire fighting as well as CBRN protection systems. Naval and merchant
+                            vessels, cruise liners and
+                            ferries as well as yachts, rail and special purpose vehicles worldwide are equipped with our
+                            plants.
+                        </div>
+                        <div class="my-3">
+                            Established 130 years ago in Germany, Noske-Kaeser now operatesa global service network to its
+                            customers and offers
+                            sales supportin numerous countries all over the world.
+                            Technology for the Future:
+                        </div>
+                        <div class="d-flex ms-3" style="align-items: baseline;">
+                            <div>
+                                <img src="img/dot.svg" alt="">
+                            </div>
+                            <div class="ms-2 dashboard-text ">
+                                Proudly, the company looks back on a history of now 130 years of existence. Companies with
+                                such
+                                a long tradition as
+                                Noske-Kaeser stand for experience, reliability andquality. Developments and their successful
+                                implementation, realized
+                                over the course of many years form an excellent basis for today's scope of supply.
+                            </div>
+                        </div>
+                        <div class="d-flex ms-3" style="align-items: baseline;">
+                            <div>
+                                <img src="img/dot.svg" alt="">
+                            </div>
+                            <div class="ms-2 dashboard-text">
+                                Noske-Kaeser equips merchant and naval vessels with systems and components in the fields of
+                                air conditioning,
+                                ventilation, refrigeration as well as fire fighting and NBC
+                                protection. For many years, the company provides first-class air conditioning systems for
+                                rail applications and special
+                                vehicles. Another major business area is the reefer
+                                container technology.
+                            </div>
+                        </div>
+                        <div class="d-flex ms-3" style="align-items: baseline;">
+                            <div>
+                                <img src="img/dot.svg" alt="">
+                            </div>
+                            <div class="ms-2 dashboard-text">
+                                Even back in the 1880s the company was an engineering pioneer in central heating and
+                                ventilation. This resulted in
+                                numerous patents and government orders. Today thistradition is being pursued by continuously
+                                expanding the scope of
+                                supply and developing new technologies for the entire product range.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

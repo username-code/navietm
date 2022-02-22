@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
+.addrole {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 0.935rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05em;
+    background-color: #0071CA;
+    border-radius: 3rem;
+    color: white;
+    padding: 0.4rem 1.5rem;
+}
+
+.dashboard1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.input-group-text{
+    background-color: #BCBCBC !important;
+}
+.warning{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+color: #E2A03F;
+/* visibility: hidden; */
+display: none;
+}
+.warning1{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+color: #E2A03F;
+/* visibility: hidden; */
+display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.incorrect{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+color: #FF0000;
+}
+.incorrect1{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+color: #FF0000;
+}
+.add{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Poppins;
+}
+.form-check-input:checked{
+    background-color:  #7C7C7C;
+    border-color: #7C7C7C;
+} 
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.email{
+font-size: 15px;
+line-height: 17.58px;
+font-weight: 600;
+}
+.email-subtext{
+    font-size: 13px;
+    line-height: 15.23px;
+    font-weight: 400;
+    font-family: ""Roboto", sans-serif";
+}
+.into{
+    color: red;
+}
+
+::placeholder{
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.form-switch .form-check-input.bbb:checked{
+    background-image: url('img/switch.svg'); 
+      background-color: black;
+}
+.form-check-input.bbb{
+    background-image: url('img/check3.svg');
+    background-color:  #7C7C7C;
+}
+.formspace{
+    padding: 0.5rem 1rem;
+}
